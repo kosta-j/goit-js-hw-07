@@ -4,6 +4,7 @@
 // подставляет его текущее значение
 // в span #name-output. Если инпут пустой,
 // в спане должна отображаться строка 'незнакомец'.
+"use strict";
 
 const nameInputRef = document.querySelector("#name-input");
 const nameOutputRef = document.querySelector("#name-output");

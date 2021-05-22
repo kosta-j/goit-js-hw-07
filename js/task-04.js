@@ -11,6 +11,8 @@
 // вызовы функций и обновление интерфейса
 
 // 1. Парсим элементы
+"use strict";
+
 const decrementBtnRef = document.querySelector(
   '#counter button[data-action="decrement"]'
 );
