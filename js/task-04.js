@@ -20,7 +20,6 @@ const incrementBtnRef = document.querySelector(
 );
 
 const counterValueRef = document.querySelector("#counter #value");
-// console.log(counterValueRef.textContent);
 
 //2. Создаем счетчик и функции
 
