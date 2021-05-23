@@ -10,10 +10,11 @@ const nameInputRef = document.querySelector("#name-input");
 const nameOutputRef = document.querySelector("#name-output");
 
 function onTextInput(event) {
-  if (event.currentTarget.value === "") {
+  const inputValue = event.currentTarget.value.trim();
+  if (inputValue === "") {
     nameOutputRef.textContent = "незнакомец";
   } else {
-    nameOutputRef.textContent = event.currentTarget.value;
+    nameOutputRef.textContent = inputValue;
   }
 }
 
