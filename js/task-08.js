@@ -28,15 +28,14 @@ const refs = {
 
 function createBoxes(amount) {
   const boxAmount = [];
-  let boxSize = 20;
-  for (let i = 1; i <= amount; i++) {
+  for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
-    boxSize += 10;
-    box.style.width = `${boxSize + 10}px`;
-    box.style.height = `${boxSize + 10}px`;
+    box.style.width = `${30 + i * 10}px`;
+    box.style.height = `${30 + i * 10}px`;
 
     box.style.backgroundColor = randomColor();
+    box.style.borderColor = randomColor();
 
     boxAmount.push(box);
   }
